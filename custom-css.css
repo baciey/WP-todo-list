@@ -1,0 +1,22 @@
+.ms-form__container {
+  margin: 20px auto;
+}
+
+.ms-form__option {
+  background-color: lightblue;
+  margin: 10px;
+}
+.ms-form__option:hover {
+  cursor: pointer;
+}
+.ms-form__option.active {
+  background-color: pink;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: auto;
+  flex-wrap: wrap;
+}
