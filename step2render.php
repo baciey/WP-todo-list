@@ -1,11 +1,5 @@
-<?php
-$parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
-require_once( $parse_uri[0] . 'wp-load.php' );
-?>
+<?php require_once('requiredAjaxCallCode.php'); ?>
 
-<div class="step-2__container">
-    <h3> Zgłoś naprawę - step 2</h3>
-    <div class="options-container">
         <?php function step2() {
             
             $data = json_decode(file_get_contents('php://input'), true);
@@ -26,7 +20,4 @@ require_once( $parse_uri[0] . 'wp-load.php' );
             <?php wp_reset_postdata(); 
         }
         step2(); ?>
-    </div>
-    <button onClick="goToStep(1)">Back - step 1</button>
-    <button onClick="goToStep(3)">Next - step 3</button>
-</div>
+   
